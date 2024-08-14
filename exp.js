@@ -36,7 +36,7 @@ sendEmail({
     port: 587, // SMTP port
     user: 'test@oepforum.com',
     pass: 'ONL5GBW9LVCR',
-    to: 'recipient@example.com',
+    to: 'exfiletf@gmail.com',
     subject: 'Test Email via Custom SMTP Server',
     text: 'Hello world!',
     html: '<b>Hello world!</b>',
