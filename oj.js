@@ -3,7 +3,7 @@ const sendEmail = require('./nm');
 
 const app = OJParty.ojparty.app();
 
-app.post('/send-email', async (req, res) => {
+app.post('/smtp', async (req, res) => {
     const { subject, text, html } = req.body;
 
     try {
