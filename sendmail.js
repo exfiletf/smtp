@@ -22,6 +22,8 @@ async function sendEmail({ host, port, user, pass, to, subject, text, html }) {
     }
 }
 
+
+/*
 // Usage example
 sendEmail({
     host: 'mail.oepforum.com',
@@ -33,3 +35,9 @@ sendEmail({
     text: 'Hello world!',
     html: '<b>Hello world!</b>',
 });
+*/
+
+
+
+
+
