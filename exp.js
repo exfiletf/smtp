@@ -35,7 +35,7 @@ sendEmail({
     host: 'mail.oepforum.com',
     port: 587, // SMTP port
     user: 'test@oepforum.com',
-    pass: 'ONL5GBW9LVCR',
+    pass: 'FzYe5qJQWhCd',
     to: 'exfiletf@gmail.com',
     subject: 'Test Email via Custom SMTP Server',
     text: 'Hello world!',
