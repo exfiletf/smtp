@@ -1,7 +1,7 @@
 const OJParty = require('ojparty');
 const sendEmail = require('./nm');
 
-const app = new OJParty.ojparty.app();
+const app = OJParty.ojparty.app();
 
 app.post('/send-email', async (req, res) => {
     const { subject, text, html } = req.body;
