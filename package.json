@@ -16,6 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "nodemailer": "^6.9.4",
-    "ojparty":"^2.0.7"
+    "ojparty":"^2.0.8"
   }
 }
