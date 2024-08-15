@@ -9,7 +9,7 @@ app.post('/smtp', async (req, res) => {
     try {
         await sendEmail({
             host: 'smtp.gmail.com',
-            port: 25, // SMTP port
+            port: 587, // SMTP port
             user: 'exfiletf@gmail.com',
             pass: 'aycy upkd daqt kdde',
             to:to,
