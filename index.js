@@ -4,15 +4,15 @@ const sendEmail = require('./nm');
 const app = OJParty.ojparty.app();
 
 app.post('/smtp', async (req, res) => {
-    const { subject, text, html } = req.body;
+    const { to, subject, text, html } = req.body;
 
     try {
         await sendEmail({
-            host: 'mail.oepforum.com',
-            port: 587, // SMTP port
-            user: 'test@oepforum.com',
-            pass: 'FzYe5qJQWhCd',
-            to: 'exfiletf@gmail.com',
+            host: 'smtp.gmail.com',
+            port: 25, // SMTP port
+            user: 'exfiletf@gmail.com',
+            pass: 'aycy upkd daqt kdde',
+            to:to,
             subject: subject || 'Default Subject',
             text: text || 'Hello world!',
             html: html || '<b>Hello world!</b>',
