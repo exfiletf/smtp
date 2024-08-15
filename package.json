@@ -4,7 +4,7 @@
   "description": "A Node.js project for sending emails using nodemailer and an API with Express",
   "main": "index.js",
   "scripts": {
-    "start": "node oj.js"
+    "start": "node index.js"
   },
   "keywords": [
     "email",
