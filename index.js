@@ -4,6 +4,7 @@ const sendEmail = require('./nm');
 const app = OJParty.ojparty.app();
 
 app.post('/smtp', async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin','*')
     const { subject, text, html } = req.body;
 
     try {
