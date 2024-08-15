@@ -18,8 +18,10 @@ app.post('/smtp', async (req, res) => {
             text: text || 'Hello world!',
             html: html || '<b>Hello world!</b>',
         });
+        res.setHeader('Access-Control-Allow-Origin','*')
         res.send('Email sent successfully');
     } catch (err) {
+        res.setHeader('Access-Control-Allow-Origin','*')
         res.status(500).send(`Error: ${err.message}`);
     }
 });
