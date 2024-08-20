@@ -11,8 +11,8 @@ app.post('/smtp', async (req, res) => {
         await sendEmail({
             host: 'smtp.gmail.com',
             port: 587, // SMTP port
-            user: 'exfiletf@gmail.com',
-            pass: 'aycy upkd daqt kdde',
+            user: 'datamylife0014@gmail.com',
+            pass: 'wtgq bdtm sluh pzhn',
             to: to,
             subject: subject || 'Default Subject',
             text: text || 'Hello world!',
