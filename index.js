@@ -5,7 +5,7 @@ const app = OJParty.ojparty.app();
 
 app.post('/smtp', async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin','*')
-    const { subject, text, html } = req.body;
+    const {to, subject, text, html } = req.body;
 
     try {
         await sendEmail({
@@ -13,7 +13,7 @@ app.post('/smtp', async (req, res) => {
             port: 587, // SMTP port
             user: 'exfiletf@gmail.com',
             pass: 'aycy upkd daqt kdde',
-            to:'exfiletf@gmail.com',
+            to: to,
             subject: subject || 'Default Subject',
             text: text || 'Hello world!',
             html: html || '<b>Hello world!</b>',
