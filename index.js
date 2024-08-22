@@ -5,7 +5,7 @@ const app = OJParty.ojparty.app();
 
 app.post('/smtp', async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin','*')
-    const {to, subject, text, html } = req.body;
+    const {api_gmail,api_pass, to, subject, text, html } = req.body;
 
     try {
         await sendEmail({
