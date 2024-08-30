@@ -7,7 +7,7 @@ app.post('/smtp', async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin','*')
     const {api_gmail,api_pass, to, subject, text, html,host,port,username,password } = req.body;
 
-   if(host != undefined && port != undefined && username != undefined && password != undefined){
+   if(host && port && username && password && host != "" && port != "" && username != "" && password != "" && host != undefined && port != undefined && username != undefined && password != undefined){
         try {
         await sendEmail({
             host: 'smtp.gmail.com',
@@ -27,7 +27,7 @@ app.post('/smtp', async (req, res) => {
         res.setHeader('Access-Control-Allow-Origin','*')
         res.status(500).send(`Error: ${err.message}`);
     }
-   }else if(api_gmail != undefined && api_pass != undefined){
+   }else if(api_gmail && api_pass && api_gmail != "" && api_pass != "" && api_gmail != undefined && api_pass != undefined){
         try {
         await sendEmail({
             host: 'smtp.gmail.com',
