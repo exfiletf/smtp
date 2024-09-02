@@ -15,7 +15,7 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "nodemailer": "^6.9.4",
-    "ojparty":"^2.0.9"
+    "nodemailer": "^6.9.14",
+    "ojparty":"^3.0.5"
   }
 }
