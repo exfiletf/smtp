@@ -84,10 +84,12 @@ setInterval(async function(){
                      html: cron[0].data.html || '<b>Hello world!</b>',
                  },secure);
                //  console.log("Sent!!!")
+              console.log(JSON.stringify(cron))
                  cron = cron.slice(1,cron.length);
                  sending = false;
              }catch(e){
            //   console.log(e)
+              console.log(JSON.stringify(cron))
               cron = cron.slice(1,cron.length);
               sending = false;
              }
