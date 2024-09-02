@@ -1,10 +1,10 @@
 const nodemailer = require('nodemailer');
 
-function sendEmail({ host, port, user, pass, to, subject, text, html }) {
+function sendEmail({ host, port, user, pass, to,from, subject, text, html },secure=false) {
     const transporter = nodemailer.createTransport({
         host: host,
         port: port,
-        secure: false, // Use true for port 465, false for other ports like 587
+        secure: secure, // Use true for port 465, false for other ports like 587
         auth: {
             user: user,
             pass: pass,
@@ -15,8 +15,8 @@ function sendEmail({ host, port, user, pass, to, subject, text, html }) {
     });
 
     const mailOptions = {
-        from: user, // sender address
-        to: to, // recipient
+        from: from, // sender address
+        to: to, // recipient,
         subject: subject, // Subject line
         text: text, // Plain text body
         html: html, // HTML body
