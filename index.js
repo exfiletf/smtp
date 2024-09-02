@@ -36,7 +36,7 @@ app.listen(3090);
 
 var sending  = false;
 setInterval(async function(){
-    console.log('Sending ', sending, 'Cron ',JSON.stringify(cron));
+  //  console.log('Sending ', sending, 'Cron ',JSON.stringify(cron));
     if(cron.length > 0 && sending == false){
         sending = true;
         if(cron[0].type == "gmail"){
