@@ -57,11 +57,11 @@ setInterval(async function(){
                 text: cron[0].data.text || 'Hello world!',
                 html: cron[0].data.html || '<b>Hello world!</b>',
             },secure);
-          //  console.log("Sent!!!")
+            console.log("Sent!!!")
             cron = cron.slice(1,cron.length);
             sending = false;
         }catch(e){
-       //  console.log(e)
+         console.log(e)
          cron = cron.slice(1,cron.length);
          sending = false;
         }
